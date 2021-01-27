@@ -35,6 +35,7 @@
         .items {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .item {
@@ -58,31 +59,55 @@
             margin-right: 10px;
             margin-bottom: 10px;
             font-size: 18px;
+            text-align: center;
         }
 
         .welcome-txt {
             font-size: 20px;
+            text-align: center;
         }
 
-        .member-banner {
+        .member-banner .txt {
             font-size: 18px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 450px) {
+            .welcome-txt{
+                text-align: start;
+            }
+
+            .member-banner .txt{
+                text-align: start;
+            }
+
+            .block-title{
+                text-align: start;
+            }
+
+            .items{
+                justify-content: flex-start;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="welcome-container container">
-        <div class="welcome-banner banner">
-            <p class="welcome-txt txt">訂閱會員 XXX 您好</p>
+    <div class="welcome">
+        <div class="welcome-container container">
+            <div class="welcome-banner banner">
+                <p class="welcome-txt txt">訂閱會員 XXX 您好</p>
+            </div>
         </div>
     </div>
 
-
-    <div class="member-container container">
-        <div class="member-banner banner">
-            <p class="member-txt txt">您現在的身分是：訂閱會員</p>
-            <p class="member-time-txt txt">訂閱到期時間：2021/01/26 10:41</p>
-            <p><a href="">前往訂閱</a></p>
+    <div class="member">
+        <div class="member-container container">
+            <div class="member-banner banner">
+                <p class="member-txt txt">您現在的身分是：訂閱會員</p>
+                <p class="member-time-txt txt">訂閱到期時間：2021/01/26 10:41</p>
+                <p class="subscribe-url txt"><a href="">前往訂閱</a></p>
+            </div>
         </div>
     </div>
 
