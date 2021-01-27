@@ -13,6 +13,7 @@
         body {
             font-family: 'Montserrat', sans-serif;
             font-size: 16px;
+            background-color: #f0e1b8;
         }
 
         td.green {
@@ -21,7 +22,7 @@
 
         .container {
             background-color: #eee;
-            margin-top: 50px;
+            margin-top: 30px;
         }
 
         .block {
@@ -54,255 +55,218 @@
             margin: 10px;
             font-size: 18px;
         }
+
+        .welcome-txt{
+            font-size: 20px;
+        }
+
+        .member-banner{
+            font-size: 18px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="banner">
-            <p>一般會員 XXX 您好</p>
+    <div class="welcome-container container">
+        <div class="welcome-banner banner">
+            <p class="welcome-txt txt">訂閱會員 XXX 您好</p>
         </div>
     </div>
 
 
-    <div class="container">
-        <div class="banner">
-            <p>您現在的身分是：訂閱會員</p>
-            <p>訂閱到期時間：2021/01/26 10:41</p>
+    <div class="member-container container">
+        <div class="member-banner banner">
+            <p class="member-txt txt">您現在的身分是：訂閱會員</p>
+            <p class="member-time-txt txt">訂閱到期時間：2021/01/26 10:41</p>
             <p><a href="">前往訂閱</a></p>
         </div>
     </div>
 
-    <div class="container">
+    <div class="features-container container">
 
 
-        <div class="block">
+        <div class="transaction-block block">
             <div class="block-title">
                 <p>交易記錄</p>
             </div>
-            <div class="items">
-                <div class="item">
+            <div class="transaction-items items">
+                <div class="order-tracking-item item">
                     <p><a href="">訂單查詢</a></p>
-                    <div class="txt">
-                        <p>未出貨：0</p>
-                        <p>已出貨：0</p>
-                        <p>宅配在途：0</p>
-                        <p>已到門市：0</p>
+                    <div class="txts">
+                        <p class="not-Shipped-txt">未出貨：0</p>
+                        <p class="shipped-txt">已出貨：0</p>
+                        <p class="home-elivery-txt">宅配在途：0</p>
+                        <p class="arrived-txt">已到門市：0</p>
                     </div>
                 </div>
 
-                <div class="item">
-                    <p><a href="">售票網訂單查詢</a></p>
-                    <div class="txt">
-                        <p>未出貨：0</p>
-                        <p>已出貨：0</p>
-                    </div>
-                </div>
-
-                <div class="item">
+                <div class="invoice-item item">
                     <p><a href="">發票/折讓查詢</a></p>
-                    <div class="txt">
+                    <div class="txts">
                         <p>限Liberia會員載具查詢</p>
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="purchase-proof-item item">
                     <p><a href="">購買證明查詢</a></p>
-                    <div class="txt">
+                    <div class="txts">
                         <p>提供購買證明查詢與列印</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="block">
-            <div class="block-title">
-                <p>禮物卡/下載版/電子書捐贈</p>
-            </div>
-            <div class="items">
-
-                <div class="item">
-                    <p><a href="">禮物卡自用禮物儲值/送禮專區</a></p>
-                    <p>禮物卡自用裡物儲值/送禮服務</p>
-                </div>
-
-                <div class="item">
-                    <p><a href="">下載版序號專區</a></p>
-                    <p>提供下載版序號查詢</p>
-                </div>
-
-                <div class="item">
-                    <p><a href="">電子書贈書/贈品管理</a></p>
-                    <p>管理與查詢贈送的電子書及數位贈品</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="block">
+        <div class="discount-block block">
             <div class="block-title">
                 <p>優惠/帳戶餘額</p>
             </div>
-            <div class="items">
-                <div class="item">
+            <div class="discount-items items">
+                <div class="subscription-item item">
                     <p><a href="">訂閱功能</a></p>
-                    <p>訂閱後成為訂閱會員</p>
+                    <div class="txts">
+                        <p>訂閱後成為訂閱會員</p>
+                    </div>
                 </div>
 
-                <div class="item">
-                    <p><a href="">可用購物金</a></p>
-                    <p>您目前有 1 點可用購物金</p>
-                </div>
-
-                <div class="item">
-                    <p><a href="">可用E-Coupon：0張</a></p>
-                    <p><a href="">可用單品折價券：0張</a></p>
-                </div>
-
-                <div class="item">
+                <div class="balance-item item">
                     <p><a href="">帳戶餘額</a></p>
-                    <p>您的帳戶目前有 1 元餘額</p>
+                    <div class="txts">
+                        <p class="balance-txt">您的帳戶目前有 1 元餘額</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="stored-value-item item">
                     <p><a href="">可用儲值金</a></p>
-                    <p>您目前有 1 點可用儲值金</p>
+                    <div class="txts">
+                        <p class="stored-value-txt">您目前有 1 點可用儲值金</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="block">
+        <div class="account-block block">
             <div class="block-title">
                 <p>客戶資料/帳號管理</p>
             </div>
-            <div class="items">
+            <div class="account-items items">
 
-                <div class="item">
-                    <p><a href="">修改博客來資料/修改密碼</a></p>
-                    <p>修改姓名、e-mail、登入密碼...等</p>
+                <div class="modify-item item">
+                    <p><a href="">修改資料/修改密碼</a></p>
+                    <div class="txts">
+                        <p>修改姓名、e-mail、登入密碼...等</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="safety-item item">
                     <p><a href="">帳號登入安全性</a></p>
-                    <p>設定帳號登入通知、兩階段驗證登入</p>
+                    <div class="txts">
+                        <p>設定帳號登入通知、兩階段驗證登入</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="OPEN-POINT-item item">
                     <p><a href="">OPEN POINT連結帳號/換購物金</a></p>
-                    <p>連結或解除OP帳號、點數查詢與兌換購物金</p>
+                    <div class="txts">
+                        <p>連結或解除OP帳號、點數查詢與兌換購物金</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="Fackbook-item item">
                     <p><a href="">Facebook 帳號連結管理</a></p>
-                    <p>連結或解除您的Facebook帳號</p>
+                    <div class="txts">
+                        <p>連結或解除您的Facebook帳號</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="Line-item item">
                     <p><a href="">LINE 帳號連結管理</a></p>
-                    <p>連結或解除您的Line帳號</p>
+                    <div class="txts">
+                        <p>連結或解除您的Line帳號</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="MUJI-item item">
                     <p><a href="">MUJI passport ID設定</a></p>
-                    <p>設定及修改MUJI passport ID</p>
+                    <div class="txts">
+                        <p>設定及修改MUJI passport ID</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="block">
+        <div class="setup-block block">
             <div class="block-title">
                 <p>各項設定/維護</p>
             </div>
-            <div class="items">
-                <div class="item">
+            <div class="setup-items items">
+                <div class="next-buy-item item">
                     <p><a href="">下次再買清單</a></p>
-                    <p>查詢您的下次買商品清單及設定提醒通知</p>
+                    <div class="txts">
+                        <p>查詢您的下次買商品清單及設定提醒通知</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="can-buy-item item">
                     <p><a href="">可訂購時通知我</a></p>
-                    <p>您關心的暫時無法訂購商品清單</p>
+                    <div class="txts">
+                        <p>您關心的暫時無法訂購商品清單</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="receive-item item">
                     <p><a href="">常用門市、收件資訊</a></p>
-                    <p>設定常用門市、收件資訊</p>
+                    <div class="txts">
+                        <p>設定常用門市、收件資訊</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="email-item item">
                     <p><a href="">會員信件訂閱管理</a></p>
-                    <p>管理您訂閱的電子報記錄和商品活動訊息</p>
-                </div>
-
-                <div class="item">
-                    <p><a href="">數位沖印服務作品集</a></p>
-                    <p>查詢您的作品編輯記錄</p>
+                    <div class="txts">
+                        <p>管理您訂閱的電子報記錄和商品活動訊息</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="block">
+        <div class="reply-block block">
             <div class="block-title">
                 <p>信件備份</p>
             </div>
-            <div class="items">
-                <div class="item">
+            <div class="reply-items items">
+                <div class="system-item item">
                     <p><a href="">系統信件備份</a></p>
-                    <p>三個月內發送過的系統通知信</p>
+                    <div class="txts">
+                        <p>三個月內發送過的系統通知信</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="service-item item">
                     <p><a href="">客服中心回函</a></p>
-                    <p>三個月內客服中心回信記錄</p>
+                    <div class="txts">
+                        <p>三個月內客服中心回信記錄</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="block">
-            <div class="block-title">
-                <p>電子書櫃</p>
-            </div>
-            <div class="items">
-                <div class="item">
-                    <p><a href="">全部書籍</a></p>
-                    <p>0本未開</p>
-                    <p>已購買、已取得之書籍雜誌一覽</p>
-                </div>
-
-                <div class="item">
-                    <p><a href="">我的閱讀</a></p>
-                    <p>個人劃線筆記、書簽、心得管理</p>
-                </div>
-
-                <div class="item">
-                    <p><a href="">試月收藏</a></p>
-                    <p>已收藏之試閱本</p>
-                </div>
-
-                <div class="item">
-                    <p><a href="">裝置管理</a></p>
-                    <p>已安裝閱讀軟體之裝置</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="block">
+        <div class="track-block block">
             <div class="block-title">
                 <p>管理追蹤作家、新品</p>
             </div>
-            <div class="items">
-                <div class="item">
+            <div class="follow-items items">
+                <div class="follow-item item">
                     <p><a href="">作家追蹤</a></p>
-                    <p>管理您追蹤的作家</p>
+                    <div class="txts">
+                        <p>管理您追蹤的作家</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <div class="new-item item">
                     <p><a href="">出版社新書快訊</a></p>
-                    <p>管理您訂閱的出版社新書</p>
-                </div>
-
-                <div class="item">
-                    <p><a href="">雜誌新刊通知</a></p>
-                    <p>管理您雜誌新刊清單</p>
+                    <div class="txts">
+                        <p>管理您訂閱的出版社新書</p>
+                    </div>
                 </div>
             </div>
         </div>
