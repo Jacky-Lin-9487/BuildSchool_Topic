@@ -38,7 +38,8 @@
         }
 
         .starcolor {
-            color: #d0011b;;
+            color: #d0011b;
+            ;
         }
 
         .contact-service {
@@ -59,6 +60,10 @@
             font-weight: bold;
         }
 
+        .information-col {
+            padding-left: 0;
+        }
+
         .information-location-block select {
             width: 100%;
         }
@@ -68,12 +73,16 @@
             font-weight: bold;
         }
 
-        .information .title{
+        .information .title {
             font-weight: bold;
         }
 
         .information .context {
             color: #9b9b9b;
+        }
+
+        .information .blocks {
+            margin-left: 15px;
         }
 
         .service-phone-context .context {
@@ -139,7 +148,7 @@
             cursor: pointer;
         }
 
-        .location input[type="radio"]:checked +label {
+        .location input[type="radio"]:checked+label {
             background-color: #7E7672;
             color: #FFFFFF;
         }
@@ -147,6 +156,10 @@
         .contact-block select {
             width: 188px;
             height: 30px;
+        }
+
+        .telephone input {
+            margin-bottom: 10px;
         }
 
         .submit-form {
@@ -167,6 +180,25 @@
             width: 160px;
             height: 44px;
         }
+
+        .context-textarea {
+            width: 70%;
+            height: 120px;
+        }
+
+        .upload-input {
+            display: none;
+        }
+
+        .upload-button {
+            border: 1px solid #3F3B3A;
+            max-width: 118px;
+            height: 32px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 32px;
+        }
+
         
     </style>
 
@@ -184,7 +216,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-3">
+            <div class="information-col col-12 col-sm-3">
                 <div class="information">
                     <div class="customer-service-block block">
                         <p>客服中心</p>
@@ -199,61 +231,65 @@
                     <div class="title-block block">
                         <p>Liberia顧客服務中心</p>
                     </div>
-                    <div class="service-phone-context block">
-                        <div class="title">
-                            <p>服務電話</p>
+                    <div class="offline-service-blocks blocks">
+                        <div class="service-phone-context block">
+                            <div class="title">
+                                <p>服務電話</p>
+                            </div>
+                            <div class="context">
+                                <p>+886-2-6638-1168</p>
+                                <p>0800-666-798按1</p>
+                            </div>
                         </div>
-                        <div class="context">
-                            <p>+886-2-6638-1168</p>
-                            <p>0800-666-798按1</p>
+                        <div class="block">
+                            <div class="title">
+                                <p>服務信箱</p>
+                            </div>
+                            <div class="context">
+                                <p>請透過「<a href="">聯絡我們</a>」提問</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="block">
-                        <div class="title">
-                            <p>服務信箱</p>
-                        </div>
-                        <div class="context">
-                            <p>請透過「<a href="">聯絡我們</a>」提問</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="title">
-                            <p>服務時間</p>
-                        </div>
-                        <div class="context">
-                            <p>週一~週五09:00~18:00</p>
-                            <p>週六~週日11:00~15:00</p>
-                            <p>例假日11:00~15:00</p>
+                        <div class="block">
+                            <div class="title">
+                                <p>服務時間</p>
+                            </div>
+                            <div class="context">
+                                <p>週一~週五09:00~18:00</p>
+                                <p>週六~週日11:00~15:00</p>
+                                <p>例假日11:00~15:00</p>
+                            </div>
                         </div>
                     </div>
                     <div class="title-block block">
                         <p>Liberia網路客服中心</p>
                     </div>
-                    <div class="block">
-                        <div class="title">
-                            <p>服務電話</p>
+                    <div class="online-service-blocks blocks">
+                        <div class="block">
+                            <div class="title">
+                                <p>服務電話</p>
+                            </div>
+                            <div class="context">
+                                <p>+886-2-8789-8921</p>
+                                <p>0800-666-798按2</p>
+                            </div>
                         </div>
-                        <div class="context">
-                            <p>+886-2-8789-8921</p>
-                            <p>0800-666-798按2</p>
+                        <div class="block">
+                            <div class="service-email-context title">
+                                <p>服務信箱</p>
+                            </div>
+                            <div class="context">
+                                <p>請至Liberia「<a href="">我要發問</a>」專區提問</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="block">
-                        <div class="service-email-context title">
-                            <p>服務信箱</p>
-                        </div>
-                        <div class="context">
-                            <p>請至Liberia「<a href="">我要發問</a>」專區提問</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="title">
-                            <p>服務時間</p>
-                        </div>
-                        <div class="context">
-                            <p>週一~週五09:00~12:30</p>
-                            <p>週六~週日13:30~18:00</p>
-                            <p>週六~週日及例假日休息</p>
+                        <div class="block">
+                            <div class="title">
+                                <p>服務時間</p>
+                            </div>
+                            <div class="context">
+                                <p>週一~週五09:00~12:30</p>
+                                <p>週六~週日13:30~18:00</p>
+                                <p>週六~週日及例假日休息</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,10 +326,10 @@
                         <form class="location" action="">
                             <input type="radio" name="location" id="Taiwan" checked>
                             <label for="Taiwan">台灣</label>
-                            
+
                             <input type="radio" name="location" id="Hongkong">
                             <label for="Hongkong">香港</label>
-                            
+
                             <input type="radio" name="location" id="China">
                             <label for="China">大陸</label>
                         </form>
@@ -334,13 +370,13 @@
                             </label>
                             <input type="text" name="phone" placeholder="手機號碼">
                         </form>
-                        <form action="">
+                        <form action="" class="telephone">
                             <label for="">
-                                
+
                             </label>
                             或 <br>
                             <label for="">
-                                
+
                             </label>
                             <input type="text" name="area-code" placeholder="室內區碼">
                             <input type="text" name="area-code" placeholder="市內電話">
@@ -372,16 +408,18 @@
                             <label for="">
                                 <span class="starcolor">*</span>內容說明：
                             </label>
-                            <input type="text" name="context" placeholder="請描述問題，讓我們能盡快協助您，您最多可輸入3000字">
+                            <textarea class="context-textarea" type="text" name="context"
+                                placeholder="請描述問題，讓我們能盡快協助您，您最多可輸入3000字"></textarea>
                         </form>
                         <form action="">
                             <label for="">
                                 上傳附件：
                             </label>
-                            <input type="file" name="file">
+                            <input class="upload-input" type="file" name="file" id="file">
+                            <label class="upload-button" for="file">選擇檔案</label>
                             <br>
                             <label for="">
-                                
+
                             </label>
                             可上傳檔案類型為PDF、JPG或PNG，檔案小於10MB。
                         </form>
@@ -404,7 +442,7 @@
         </div>
     </div>
 
-    
+
 
 </body>
 
