@@ -28,9 +28,146 @@
             background-color: #ffffff;
         }
 
-        .contact-service {
-            font-size: 40px;
+        a {
+            color: inherit;
         }
+
+        a:hover {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        .starcolor {
+            color: #d0011b;;
+        }
+
+        .contact-service {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .block {
+            margin: 20px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .customer-service-block {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .information-location-block select {
+            width: 100%;
+        }
+
+        .title-block {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .information .title{
+            font-weight: bold;
+        }
+
+        .information .context {
+            color: #9b9b9b;
+        }
+
+        .service-phone-context .context {
+            color: #7E7672;
+        }
+
+        .service-email-context .context {
+            color: #7E7672;
+        }
+
+        .tags {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 30px 0px;
+        }
+
+        .tags .col-4 {
+            padding: 0;
+        }
+
+        .tag {
+            height: 40px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #d8d8d8;
+            color: #cccccc;
+            cursor: pointer;
+        }
+
+        .tag:hover {
+            color: #212529;
+            border-bottom: 6px solid #e4e0d2;
+            transition: 0.5s;
+        }
+
+        .contact-block form {
+            margin: 10px 0px;
+        }
+
+        .contact-block p {
+            padding-bottom: 10px;
+        }
+
+        .contact-block .txt {
+            margin-bottom: 10px;
+        }
+
+        .contact-block form:not(.location) label {
+            width: 23%;
+        }
+
+        .location input[type="radio"] {
+            display: none;
+        }
+
+        .location label {
+            border: 1px solid #7E7672;
+            background-color: #fff;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        .location input[type="radio"]:checked +label {
+            background-color: #7E7672;
+            color: #FFFFFF;
+        }
+
+        .contact-block select {
+            width: 188px;
+            height: 30px;
+        }
+
+        .submit-form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .submit-form input {
+            margin: 20px;
+        }
+
+        .submit-button {
+            background-color: #3e3a39;
+            color: #fff;
+        }
+
+        .submit-form input {
+            width: 160px;
+            height: 44px;
+        }
+        
     </style>
 
 </head>
@@ -49,51 +186,75 @@
         <div class="row">
             <div class="col-12 col-sm-3">
                 <div class="information">
-                    <div class="block">
+                    <div class="customer-service-block block">
                         <p>客服中心</p>
                     </div>
-                    <div class="block">
+                    <div class="information-location-block block">
                         <select>
                             <option value="Taiwan">台灣</option>
                             <option value="Hongkong">香港</option>
                             <option value="China">大陸</option>
                         </select>
                     </div>
-                    <div class="block">
+                    <div class="title-block block">
                         <p>Liberia顧客服務中心</p>
                     </div>
-                    <div class="block">
-                        <p>服務電話</p>
-                        <p>+886-2-6638-1168</p>
-                        <p>0800-666-798按1</p>
+                    <div class="service-phone-context block">
+                        <div class="title">
+                            <p>服務電話</p>
+                        </div>
+                        <div class="context">
+                            <p>+886-2-6638-1168</p>
+                            <p>0800-666-798按1</p>
+                        </div>
                     </div>
                     <div class="block">
-                        <p>服務信箱</p>
-                        <p>請透過「<a href="">聯絡我們</a>」提問</p>
+                        <div class="title">
+                            <p>服務信箱</p>
+                        </div>
+                        <div class="context">
+                            <p>請透過「<a href="">聯絡我們</a>」提問</p>
+                        </div>
                     </div>
                     <div class="block">
-                        <p>服務時間</p>
-                        <p>週一~週五09:00~18:00</p>
-                        <p>週六~週日11:00~15:00</p>
-                        <p>例假日11:00~15:00</p>
+                        <div class="title">
+                            <p>服務時間</p>
+                        </div>
+                        <div class="context">
+                            <p>週一~週五09:00~18:00</p>
+                            <p>週六~週日11:00~15:00</p>
+                            <p>例假日11:00~15:00</p>
+                        </div>
                     </div>
-                    <div class="block">
+                    <div class="title-block block">
                         <p>Liberia網路客服中心</p>
                     </div>
                     <div class="block">
-                        <p>服務電話</p>
-                        <p>+886-2-8789-8921</p>
-                        <p>0800-666-798按2</p>
+                        <div class="title">
+                            <p>服務電話</p>
+                        </div>
+                        <div class="context">
+                            <p>+886-2-8789-8921</p>
+                            <p>0800-666-798按2</p>
+                        </div>
                     </div>
                     <div class="block">
-                        <p>服務信箱</p>
-                        <p>請至Liberia「<a href="">我要發問</a>」專區提問</p>
+                        <div class="service-email-context title">
+                            <p>服務信箱</p>
+                        </div>
+                        <div class="context">
+                            <p>請至Liberia「<a href="">我要發問</a>」專區提問</p>
+                        </div>
                     </div>
                     <div class="block">
-                        <p>服務時間</p>
-                        <p>週一~週五09:00~12:30</p>
-                        <p>週六~週日13:30~18:00</p>
-                        <p>週六~週日及例假日休息</p>
+                        <div class="title">
+                            <p>服務時間</p>
+                        </div>
+                        <div class="context">
+                            <p>週一~週五09:00~12:30</p>
+                            <p>週六~週日13:30~18:00</p>
+                            <p>週六~週日及例假日休息</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,13 +264,19 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-4">
-                                    <p>聯絡我們</p>
+                                    <div class="tag">
+                                        <p>聯絡我們</p>
+                                    </div>
                                 </div>
                                 <div class="col-4">
-                                    <p>常見問題</p>
+                                    <div class="tag">
+                                        <p>常見問題</p>
+                                    </div>
                                 </div>
                                 <div class="col-4">
-                                    <p>發問紀錄</p>
+                                    <div class="tag">
+                                        <p>發問紀錄</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -118,113 +285,118 @@
                     <div class="contact-block">
                         <div class="txt">
                             <p>我們非常重視您的意見，也很樂意解答您的問題，請提供以下資訊，幫助我們能儘快處理及回覆，謝謝您的配合，並祝您有個充實而愉快的閱讀生活。</p>
-                            <p>*必填欄位</p>
+                            <p><span class="starcolor">*</span>必填欄位</p>
                         </div>
                         <form class="location" action="">
-                            <label for="Taiwan">
-                                <input type="radio" name="location" id="Taiwan" checked>台灣
-                            </label>
-                            <label for="Hongkong">
-                                <input type="radio" name="location" id="Hongkong">香港
-                            </label>
-                            <label for="China">
-                                <input type="radio" name="location" id="China">大陸
-                            </label>
+                            <input type="radio" name="location" id="Taiwan" checked>
+                            <label for="Taiwan">台灣</label>
+                            
+                            <input type="radio" name="location" id="Hongkong">
+                            <label for="Hongkong">香港</label>
+                            
+                            <input type="radio" name="location" id="China">
+                            <label for="China">大陸</label>
                         </form>
                         <form action="">
                             <label for="">
-                                *會員身分：
-                                <select name="member-level" id="">
-                                    <option value="normal-member">一般會員</option>
-                                    <option value="subscribe-member">訂閱會員</option>
-                                </select>
+                                <span class="starcolor">*</span>會員身分：
                             </label>
+                            <select name="member-level" id="">
+                                <option value="normal-member">一般會員</option>
+                                <option value="subscribe-member">訂閱會員</option>
+                            </select>
                         </form>
                         <form action="">
-                            <label for="">
-                                卡號：
-                                <input type="text" name="card-number">
-                            </label>
+                            <label for="">卡號：</label>
+                            <input type="text" name="card-number">
                         </form>
                         <form action="">
                             <label for="">
                                 帳號：
-                                <input type="text" name="account">
                             </label>
+                            <input type="text" name="account">
                         </form>
                         <form action="">
                             <label for="">
                                 姓名：
-                                <input type="text" name="name">
                             </label>
+                            <input type="text" name="name">
                         </form>
                         <form action="">
                             <label for="">
-                                *電子信箱：
-                                <input type="text" name="email">
+                                <span class="starcolor">*</span>電子信箱：
                             </label>
+                            <input type="text" name="email">
                         </form>
                         <form action="">
                             <label for="">
                                 連絡電話：
-                                <input type="text" name="phone" placeholder="手機號碼">
                             </label>
+                            <input type="text" name="phone" placeholder="手機號碼">
                         </form>
                         <form action="">
                             <label for="">
-                                或
-                                <input type="text" name="area-code" placeholder="室內區碼"> <br>
-                                <input type="text" name="area-code" placeholder="市內電話">
-                                <input type="text" name="area-code" placeholder="分機">
+                                
                             </label>
+                            或 <br>
+                            <label for="">
+                                
+                            </label>
+                            <input type="text" name="area-code" placeholder="室內區碼">
+                            <input type="text" name="area-code" placeholder="市內電話">
+                            <input type="text" name="area-code" placeholder="分機">
                         </form>
                         <form action="">
                             <label for="">
-                                *服務類型：
-                                <select name="service-class" id="">
-                                    <option value="-1">請選擇</option>
-                                    <option value="member-service">會員服務</option>
-                                    <option value="signup-login">註冊登入</option>
-                                    <option value="APP-site">APP、網站</option>
-                                    <option value="Liberia-online">Liberia線上</option>
-                                    <option value="bookstore">書店相關</option>
-                                    <option value="mall">商場相關</option>
-                                    <option value="cinema-performance">電影院、表演廳</option>
-                                    <option value="travel-fashion-wine">行旅、時尚、酒窖</option>
-                                    <option value="cooperation">異界合作</option>
-                                    <option value="traveler">外籍旅客</option>
-                                    <option value="other">其它</option>
-                                </select>
-                                <select name="service-class-detail" id="">
-
-                                </select>
+                                <span class="starcolor">*</span>服務類型：
                             </label>
+                            <select name="service-class" id="">
+                                <option value="-1">請選擇</option>
+                                <option value="member-service">會員服務</option>
+                                <option value="signup-login">註冊登入</option>
+                                <option value="APP-site">APP、網站</option>
+                                <option value="Liberia-online">Liberia線上</option>
+                                <option value="bookstore">書店相關</option>
+                                <option value="mall">商場相關</option>
+                                <option value="cinema-performance">電影院、表演廳</option>
+                                <option value="travel-fashion-wine">行旅、時尚、酒窖</option>
+                                <option value="cooperation">異界合作</option>
+                                <option value="traveler">外籍旅客</option>
+                                <option value="other">其它</option>
+                            </select>
+                            <select name="service-class-detail" id="">
+                                <option value="-1">請選擇</option>
+                            </select>
                         </form>
                         <form action="">
                             <label for="">
-                                *內容說明：
-                                <input type="text" name="context" placeholder="請描述問題，讓我們能盡快協助您，您最多可輸入3000字">
+                                <span class="starcolor">*</span>內容說明：
                             </label>
+                            <input type="text" name="context" placeholder="請描述問題，讓我們能盡快協助您，您最多可輸入3000字">
                         </form>
                         <form action="">
                             <label for="">
                                 上傳附件：
-                                <input type="file" name="file">
-                                可上傳檔案類型為PDF、JPG或PNG，檔案小於10MB。
                             </label>
+                            <input type="file" name="file">
+                            <br>
+                            <label for="">
+                                
+                            </label>
+                            可上傳檔案類型為PDF、JPG或PNG，檔案小於10MB。
                         </form>
                         <form action="">
                             <label for="">
-                                *驗證碼：
-                                <input type="text" name="verification">
-                                <img src="https://fakeimg.pl/122x44/FFF">
-                                <i class="fas fa-redo"></i>
+                                <span class="starcolor">*</span>驗證碼：
                             </label>
+                            <input type="text" name="verification">
+                            <img src="https://fakeimg.pl/122x44/FFF">
+                            <a href=""><i class="fas fa-redo"></i></a>
                         </form>
 
-                        <form action="">
-                                <input type="reset" value="重新填寫">
-                                <input type="submit" value="確認送出">
+                        <form class="submit-form form" action="">
+                            <input type="reset" value="重新填寫">
+                            <input class="submit-button" type="submit" value="確認送出">
                         </form>
                     </div>
                 </div>
@@ -232,6 +404,7 @@
         </div>
     </div>
 
+    
 
 </body>
 
