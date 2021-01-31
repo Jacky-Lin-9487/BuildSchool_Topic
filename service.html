@@ -199,6 +199,34 @@
             line-height: 32px;
         }
 
+        .phone-fix-label {
+            display: inline-block;
+        }
+
+        .tablet-fix-label {
+            display: inline-block;
+        }
+
+        @media (min-width: 768px) {
+            .tablet-fix-label {
+                display: none;
+            }
+
+            .tablet-fix-br {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .phone-fix-label {
+                display: none;
+            }
+
+            .desktop-fix-br {
+                display: none;
+            }
+        }
+
         
     </style>
 
@@ -379,7 +407,17 @@
 
                             </label>
                             <input type="text" name="area-code" placeholder="室內區碼">
+
+                            <br class="tablet-fix-br">
+                            <label class="tablet-fix-label" for="">
+
+                            </label>
                             <input type="text" name="area-code" placeholder="市內電話">
+
+                            <br class="tablet-fix-br">
+                            <label class="phone-fix-label" for="">
+
+                            </label>
                             <input type="text" name="area-code" placeholder="分機">
                         </form>
                         <form action="">
@@ -400,6 +438,10 @@
                                 <option value="traveler">外籍旅客</option>
                                 <option value="other">其它</option>
                             </select>
+                            <br class="desktop-fix-br">
+                            <label class="phone-fix-label" for="">
+
+                            </label>
                             <select name="service-class-detail" id="">
                                 <option value="-1">請選擇</option>
                             </select>
