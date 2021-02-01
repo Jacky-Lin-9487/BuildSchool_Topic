@@ -159,6 +159,10 @@
             height: 30px;
         }
 
+        .deleted {
+            display: none;
+        }
+
         .telephone input {
             margin-bottom: 10px;
         }
@@ -443,9 +447,9 @@
                                 <option value="Liberia-online">Liberia線上</option>
                                 <option value="bookstore">書店相關</option>
                                 <option value="mall">商場相關</option>
-                                <option value="cinema-performance">電影院、表演廳</option>
-                                <option value="travel-fashion-wine">行旅、時尚、酒窖</option>
-                                <option value="cooperation">異界合作</option>
+                                <option class="deleted" value="cinema-performance">電影院、表演廳</option> <!-- 刪除 -->
+                                <option class="deleted" value="travel-fashion-wine">行旅、時尚、酒窖</option> <!-- 刪除 -->
+                                <option class="deleted" value="cooperation">異界合作</option> <!-- 刪除 -->
                                 <option value="traveler">外籍旅客</option>
                                 <option value="other">其它</option>
                             </select>
@@ -577,14 +581,14 @@
                 serviceClassDetailSelect.add(new Option("服務建議", "service-suggestion"));
                 serviceClassDetailSelect.add(new Option("服務讚美", "service-praise"));
             }
-            else if (index == 7) //電影院、表演廳
+            else if (index == 7) //電影院、表演廳 <!-- 刪除 -->
             {
                 serviceClassDetailSelect.add(new Option("營業資訊", "business-information"));
                 serviceClassDetailSelect.add(new Option("票務相關", "ticket-related"));
                 serviceClassDetailSelect.add(new Option("服務建議", "service-suggestion"));
                 serviceClassDetailSelect.add(new Option("服務讚美", "service-praise"));
             }
-            else if (index == 8) //行旅、時尚、酒窖
+            else if (index == 8) //行旅、時尚、酒窖 <!-- 刪除 -->
             {
                 serviceClassDetailSelect.add(new Option("營業資訊", "business-information"));
                 serviceClassDetailSelect.add(new Option("活動訊息", "event message"));
@@ -592,7 +596,7 @@
                 serviceClassDetailSelect.add(new Option("服務建議", "service-suggestion"));
                 serviceClassDetailSelect.add(new Option("服務讚美", "service-praise"));
             }
-            else if (index == 9) //異界合作
+            else if (index == 9) //異界合作 <!-- 刪除 -->
             {
                 serviceClassDetailSelect.add(new Option("活動企劃", "event-planning"));
                 serviceClassDetailSelect.add(new Option("設店合作", "store-cooperation"));
